@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlansQRGameDM">
-        <activity android:name=".shopActivity"></activity>
+        <activity android:name=".credentials"></activity>
+        <activity android:name=".shopActivity" />
         <activity android:name=".startActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

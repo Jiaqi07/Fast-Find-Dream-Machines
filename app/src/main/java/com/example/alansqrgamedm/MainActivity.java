@@ -15,8 +15,18 @@ public class MainActivity extends AppCompatActivity {
 
         goToShop();
         goToScan();
+        goToLogin();
     }
 
+    private void goToLogin() {
+        Button nextButton = (Button) findViewById((R.id.logIn));
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, credentials.class));
+            }
+        });
+    }
     private void goToShop() {
         Button nextButton = (Button) findViewById((R.id.shopButton));
         nextButton.setOnClickListener(new View.OnClickListener() {
