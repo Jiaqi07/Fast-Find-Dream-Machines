@@ -1,8 +1,5 @@
 package com.example.alansqrgamedm;
 
-import android.content.Intent;
-import android.content.pm.PackageManager;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

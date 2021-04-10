@@ -13,10 +13,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        configureNextButton();
+        goToShop();
+        goToScan();
     }
 
-    private void configureNextButton() {
+    private void goToShop() {
+        Button nextButton = (Button) findViewById((R.id.shopButton));
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, shopActivity.class));
+            }
+        });
+    }
+    private void goToScan() {
         Button nextButton = (Button) findViewById((R.id.nextButton));
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
