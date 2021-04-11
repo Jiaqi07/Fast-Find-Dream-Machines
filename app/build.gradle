@@ -10,8 +10,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.alansqrgamedm"
-        minSdkVersion 30
-        targetSdkVersion 30
+        minSdkVersion 26
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
 

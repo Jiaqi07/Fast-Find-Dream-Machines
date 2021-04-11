@@ -20,29 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void goToLogin() {
         Button nextButton = (Button) findViewById((R.id.logIn));
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, credentials.class));
-            }
-        });
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, credentials.class)));
     }
     private void goToShop() {
         Button nextButton = (Button) findViewById((R.id.shopButton));
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, shopActivity.class));
-            }
-        });
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, shopActivity.class)));
     }
     private void goToScan() {
         Button nextButton = (Button) findViewById((R.id.nextButton));
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, startActivity.class));
-            }
-        });
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, startActivity.class)));
     }
 }

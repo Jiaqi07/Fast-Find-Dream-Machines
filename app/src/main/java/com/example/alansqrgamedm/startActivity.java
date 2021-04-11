@@ -1,15 +1,11 @@
 package com.example.alansqrgamedm;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import com.budiyev.android.codescanner.CodeScanner;
 import com.budiyev.android.codescanner.CodeScannerView;
-import com.budiyev.android.codescanner.DecodeCallback;
-import com.google.zxing.Result;
 
 public class startActivity extends AppCompatActivity {
     private CodeScanner mCodeScanner;
@@ -23,33 +19,19 @@ public class startActivity extends AppCompatActivity {
 
         CodeScannerView scannerView = findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(this, scannerView);
-        mCodeScanner.setDecodeCallback(new DecodeCallback() {
+        mCodeScanner.setDecodeCallback(result -> runOnUiThread(new Runnable() {
             @Override
-            public void onDecoded(@NonNull final Result result) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(startActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
-                    }
-                });
+            public void run() {
+                Toast.makeText(startActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
+                onResume();
             }
-        });
-        scannerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mCodeScanner.startPreview();
-            }
-        });
+        }));
+        scannerView.setOnClickListener(view -> mCodeScanner.startPreview());
     }
 
     private void configureBackButton() {
         Button backButton = (Button) findViewById((R.id.backButton));
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        backButton.setOnClickListener(view -> finish());
     }
 
     @Override
