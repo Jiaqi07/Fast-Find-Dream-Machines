@@ -3,7 +3,6 @@ package com.example.alansqrgamedm;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 
@@ -16,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         goToShop();
         goToScan();
         goToLogin();
+        goToTrivia();
+        goToMap();
     }
 
     private void goToLogin() {
@@ -29,5 +30,13 @@ public class MainActivity extends AppCompatActivity {
     private void goToScan() {
         Button nextButton = (Button) findViewById((R.id.nextButton));
         nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, startActivity.class)));
+    }
+    private void goToTrivia() {
+        Button nextButton = (Button) findViewById((R.id.goTrivia));
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, TriviaActivity.class)));
+    }
+    private void goToMap() {
+        Button nextButton = (Button) findViewById((R.id.goMaps));
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MapActivity.class)));
     }
 }
