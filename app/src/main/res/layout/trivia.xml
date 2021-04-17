@@ -7,13 +7,28 @@
     android:background="#2162f3"
     tools:context=".TriviaActivity">
 
+    <Button
+        android:id="@+id/goBackStart2"
+        android:layout_width="131dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFF5722"
+        android:gravity="center"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.13999999" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/triviaText"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginBottom="536dp"
         android:gravity="center"
-        android:text="Map"
+        android:text="Trivia"
         android:textColor="#FFFF"
         android:textColorHighlight="#000000"
         android:textSize="40sp"
@@ -24,18 +39,55 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:layout_constraintVertical_bias="0.099" />
 
-    <Button
-        android:id="@+id/goBackStart2"
-        android:layout_width="131dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#FFFF5722"
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
         android:gravity="center"
-        android:text="Go Back"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/goBackStart2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triviaText"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Answer"
+        app:layout_constraintBottom_toTopOf="@+id/goBackStart2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/wrong"
+        android:layout_width="323dp"
+        android:layout_height="428dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.13999999" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765"
+        app:srcCompat="@drawable/pinclipart_com_mistake_clipart_615350" />
+
+    <ImageView
+        android:id="@+id/correct"
+        android:layout_width="300dp"
+        android:layout_height="409dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        app:srcCompat="@drawable/clipart150472" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
