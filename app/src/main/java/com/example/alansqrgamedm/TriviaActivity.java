@@ -3,6 +3,7 @@ package com.example.alansqrgamedm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.*;
 
@@ -48,6 +50,13 @@ public class TriviaActivity extends AppCompatActivity {
                 if(answers.getText().toString().equalsIgnoreCase(questionsText.get(index).getAnswer())){
                     wrong.setVisibility(View.INVISIBLE);
                     correct.setVisibility(View.VISIBLE);
+                    Toast.makeText(TriviaActivity.this, "You got it right!", Toast.LENGTH_SHORT).show();
+                    Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        public void run() {
+                            finish();
+                        }
+                    }, 3000);   //5 seconds
                 }
                 else{
                     correct.setVisibility(View.INVISIBLE);

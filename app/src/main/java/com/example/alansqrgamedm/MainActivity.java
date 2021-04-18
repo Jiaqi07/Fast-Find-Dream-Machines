@@ -37,6 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
     private void goToMap() {
         Button nextButton = (Button) findViewById((R.id.goMaps));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MapActivity.class)));
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MapsActivity.class)));
     }
 }
