@@ -7,30 +7,17 @@
     android:background="#4472c4"
     tools:context=".startActivity">
 
-    <Button
-        android:id="@+id/goClue"
-        android:layout_width="177dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#F39C1B"
-        android:gravity="center"
-        android:text="Next"
+    <ImageButton
+        android:id="@+id/home3"
+        android:layout_width="180dp"
+        android:layout_height="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="278dp"
-        android:layout_height="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/backtohomesmall" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -46,41 +33,55 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="268dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="114dp"
+        android:layout_width="417dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="2dp"
         android:layout_marginBottom="460dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677"
-        app:srcCompat="@drawable/turtletriviachoice" />
+        app:layout_constraintVertical_bias="0.26999998"
+        app:srcCompat="@drawable/calspointsbegining" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="278dp"
-        android:layout_height="85dp"
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="177dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F39C1B"
+        android:gravity="center"
+        android:text="maps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.541" />
 
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="180dp"
-        android:layout_height="132dp"
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="177dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#A69A87"
+        android:gravity="center"
+        android:text="Scan "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/backtohomesmall" />
+        app:layout_constraintVertical_bias="0.687" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="409dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/clue1small" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

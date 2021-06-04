@@ -5,4 +5,19 @@
     <string name="hybrid_map">Hybrid Map</string>
     <string name="satellite_map">Satellite Map</string>
     <string name="terrain_map">Terrain Map</string>
+
+    <string-array name="names">
+        <item>Random</item>
+        <item>Math</item>
+        <item>Science</item>
+        <item>Language</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="difficulty">
+        <item>Random</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Expert</item>
+    </string-array>
 </resources>

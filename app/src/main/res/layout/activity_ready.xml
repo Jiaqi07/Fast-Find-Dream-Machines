@@ -7,30 +7,17 @@
     android:background="#4472c4"
     tools:context=".startActivity">
 
-    <Button
-        android:id="@+id/goClue"
-        android:layout_width="177dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#F39C1B"
-        android:gravity="center"
-        android:text="Next"
+    <ImageButton
+        android:id="@+id/home2"
+        android:layout_width="180dp"
+        android:layout_height="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="278dp"
-        android:layout_height="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/backtohomesmall" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -58,29 +45,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677"
-        app:srcCompat="@drawable/turtletriviachoice" />
+        app:srcCompat="@drawable/turtleready" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="278dp"
-        android:layout_height="85dp"
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="177dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F39C1B"
+        android:gravity="center"
+        android:text="Show Clue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
-
-    <ImageButton
-        android:id="@+id/home"
-        android:layout_width="180dp"
-        android:layout_height="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/backtohomesmall" />
+        app:layout_constraintVertical_bias="0.316" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

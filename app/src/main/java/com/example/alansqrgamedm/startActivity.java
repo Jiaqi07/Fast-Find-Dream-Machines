@@ -1,6 +1,8 @@
 package com.example.alansqrgamedm;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,8 @@ public class startActivity extends AppCompatActivity {
                     for(int i = 0; i < ca.length; ++i){
                         if(ca[i] == '^'){
                             Toast.makeText(startActivity.this, "Congrats, Points Have Been Added To Your Account!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(startActivity.this, locationfound.class);
+                            startActivity(intent);
                         }
                     }
                     reScanButton.setOnClickListener(new View.OnClickListener() {

@@ -12,31 +12,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        goToShop();
-        goToScan();
-        goToLogin();
+        goToTrivia2();
         goToTrivia();
-        goToMap();
-    }
 
-    private void goToLogin() {
-        Button nextButton = (Button) findViewById((R.id.logIn));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, credentials.class)));
-    }
-    private void goToShop() {
-        Button nextButton = (Button) findViewById((R.id.shopButton));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, shopActivity.class)));
-    }
-    private void goToScan() {
-        Button nextButton = (Button) findViewById((R.id.nextButton));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, startActivity.class)));
     }
     private void goToTrivia() {
-        Button nextButton = (Button) findViewById((R.id.goTrivia));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, TriviaActivity.class)));
+        Button nextButton = (Button) findViewById((R.id.goQ));
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, questionActivity.class)));
     }
-    private void goToMap() {
-        Button nextButton = (Button) findViewById((R.id.goMaps));
-        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MapsActivity.class)));
+    private void goToTrivia2() {
+        Button nextButton = (Button) findViewById((R.id.goQ1));
+        nextButton.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, questionActivity.class)));
     }
 }

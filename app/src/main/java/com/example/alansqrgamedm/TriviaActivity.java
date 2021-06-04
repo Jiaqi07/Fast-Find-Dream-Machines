@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,7 +72,7 @@ public class TriviaActivity extends AppCompatActivity {
         configureBackButton();
     }
     private void configureBackButton() {
-        Button backButton = (Button) findViewById((R.id.goBackStart2));
+        ImageButton backButton = (ImageButton) findViewById((R.id.home5));
         backButton.setOnClickListener(view -> finish());
     }
 }
