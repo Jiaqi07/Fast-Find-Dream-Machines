@@ -11,7 +11,7 @@ public class locationfound extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clue);
+        setContentView(R.layout.activity_locationfound);
 
         goToTrivia();
         configureBackButton();

@@ -7,32 +7,8 @@
     android:background="#4472c4"
     tools:context=".startActivity">
 
-    <ImageButton
-        android:id="@+id/home3"
-        android:layout_width="180dp"
-        android:layout_height="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/backtohomesmall" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="82dp"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/capture2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView6"
         android:layout_width="417dp"
         android:layout_height="114dp"
         android:layout_marginTop="2dp"
@@ -41,8 +17,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26999998"
-        app:srcCompat="@drawable/calspointsbegining" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/calspointslocation1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="121dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        android:src="@drawable/fflogo_"/>
+
+    <ImageButton
+        android:id="@+id/home3"
+        android:layout_width="128dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993"
+        app:srcCompat="@drawable/backtohomenew" />
 
     <Button
         android:id="@+id/maps"
@@ -76,12 +76,11 @@
         android:id="@+id/imageView4"
         android:layout_width="409dp"
         android:layout_height="169dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="17dp"
         app:layout_constraintBottom_toTopOf="@+id/maps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@drawable/clue1small" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
